@@ -1,0 +1,51 @@
+. {
+  box-sizing: border-box;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.promo__timer .timer {
+    margin:50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center
+}
+
+.promo__timer .timer__block {
+    width:100px;
+    height:125px;
+    background:#fff;
+    box-shadow:0 5px 10px rgba(0,0,0,.30);
+    font-size:16px;
+    font-weight:300;
+    color: #545559;
+    text-align:center;
+    border-radius: 20%;
+}
+
+.promo__timer .timer__block span {
+    display:block;
+    margin-top:20px;
+    margin-bottom:5px;
+    font-size:56px;
+    font-weight:700;
+    color: #545559
+}
+
+.hidden {
+    display: none;
+}
+
+.promo__timer {
+    margin-top: 70px;
+}
+
+input, button {
+    font-size: 16px;
+    color: #545559;
+    padding: 3px
+}
