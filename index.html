@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор дат и таймер</title>
+    <script src="./js/main.js" type="module"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="switchApplication">
+        <p>Выбери нужное приложение:</p>
+        <button class="dateCalApplication">Калькулятор дат</button>
+        <button class="timerApplication">Таймер</button>
+    </div>
+
+    <form id="dateCalc" class="hidden">
+        <h3>Калькулятор дат</h3>
+        <label>
+            <strong>Первая дата:</strong>
+            <input type="date" name="firstDate"/>
+        </label>
+        <label>
+            <strong>Вторая дата:</strong>
+            <input type="date" name="secondDate"/>
+        </label>
+        <button type="submit">Расчитать промежуток</button>
+        <p id="dateCalc__result"></p>
+    </form>
+
+    <div class="promo__timer hidden">
+
+        <h1>Таймер обратного отчёта до выбранной даты:</h1>
+
+        <form>
+            <label>
+                <input class="inputDeadline" type="date" name="deadline">
+            </label>
+            <button class="start">Старт</button>
+            <button class="stop">Стоп</button>
+        </form>
+
+        <div class="timer">
+            <div class="timer__block">
+                <span id="days">00</span>
+                дней
+            </div>
+            <div class="timer__block">
+                <span id="hours">00</span>
+                часов
+            </div>
+            <div class="timer__block">
+                <span id="minutes">00</span>
+                минут
+            </div>
+            <div class="timer__block">
+                <span id="seconds">00</span>
+                секунд
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
